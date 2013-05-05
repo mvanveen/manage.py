@@ -1,0 +1,10 @@
+*.pyc
+build
+dist
+*.egg-info
+
+*.sw*
+
+.env
+manage.py
+
