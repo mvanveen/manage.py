@@ -12,7 +12,9 @@ Installation
 Quickstart
 ----------
 
-``cat manage.py``::
+``cat manage.py``
+
+.. code:: python
 
     from manage import Manager
 
@@ -59,7 +61,9 @@ Quickstart
 Managers
 --------
 
-Managers can be used together by merging them::
+Managers can be used together by merging them
+
+.. code:: python
 
     from third_party import manager
 
@@ -72,7 +76,9 @@ Managers can be used together by merging them::
 Commands
 --------
 
-Commands can be organized within namespaces::
+Commands can be organized within namespaces
+
+.. code:: python
 
     @manager.command(namespace='config')
     def set(key, value):
@@ -82,7 +88,9 @@ Commands can be organized within namespaces::
 Arguments
 ---------
 
-Argument definition can be overridden::
+Argument definition can be overridden
+
+.. code:: python
 
     @manager.arg('first_arg', help='this is help for first arg')
     @manager.command
