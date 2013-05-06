@@ -101,7 +101,8 @@ class Command(object):
         if type_ == list:
             [puts(i, stream=stdout) for i in r]
         elif type_ == dict:
-            []
+            for key in r:
+                puts(min_width(colored.blue(key), 25) + r[key])
         else:
             puts(str(r), stream=stdout)
 
