@@ -29,6 +29,9 @@ class Command(object):
 
         self.inspect()
 
+    def __call__(self, *args, **kwargs):
+        return self.run(*args, **kwargs)
+
     def inspect(self):
         self.arg_names, varargs, keywords, defaults = inspect.getargspec(
             self.run)
