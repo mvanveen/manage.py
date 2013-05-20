@@ -27,7 +27,7 @@ Quickstart
             text = text.upper()
         return text
 
-
+    manager.main()
 ``manage --help``::
 
     usage: manage [<namespace>.]<command> [<args>]
